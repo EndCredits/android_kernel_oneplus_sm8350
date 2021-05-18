@@ -1,4 +1,9 @@
 # SPDX-License-Identifier: GPL-2.0
+dtstree	:= $(srctree)/$(src)
+vendor  := $(dtstree)/vendor
+ifneq "$(wildcard $(vendor)/Makefile)" ""
+    subdir-y += vendor
+else
 #ifndef VENDOR_EDIT
 #subdir-y += actions
 #subdir-y += al
@@ -30,8 +35,4 @@
 #subdir-y += zte
 #endif/*VENDOR_EDIT*/
 subdir-y += qcom
-dtstree	:= $(srctree)/$(src)
-vendor  := $(dtstree)/vendor
-ifneq "$(wildcard $(vendor)/Makefile)" ""
-    subdir-y += vendor
 endif
