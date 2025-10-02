@@ -5,11 +5,7 @@
 
 #ifndef _CPUFREQ_UAG_H_
 #define _CPUFREQ_UAG_H_
-#ifdef CONFIG_ARCH_MEDIATEK_
-#include "../../power/cpufreq_health/cpufreq_health.h"
-#else
 #include <linux/cpufreq_health.h>
-#endif
 #include <linux/irq_work.h>
 #include <linux/kthread.h>
 

@@ -29,7 +29,7 @@
 #include "../tuning/frame_group.h"
 #endif
 #include <linux/version.h>
-#include "../../power/cpufreq_health/cpufreq_health.h"
+#include <linux/cpufreq_health.h>
 #include <linux/kernel.h>
 #if IS_ENABLED(CONFIG_OPLUS_CPUFREQ_IOWAIT_PROTECT)
 #include "../sched_assist/eas_opt/oplus_iowait.h"
