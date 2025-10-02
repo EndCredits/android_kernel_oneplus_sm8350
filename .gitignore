@@ -150,3 +150,7 @@ x509.genkey
 # generated defconfigs
 arch/*/configs/vendor/*_defconfig
 
+# build toolchains
+clang-r383902b1
+gcc-4.9-aarch64
+gcc-4.9-arm32
