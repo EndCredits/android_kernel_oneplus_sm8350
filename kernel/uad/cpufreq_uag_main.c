@@ -26,7 +26,7 @@
 #endif
 
 #if IS_ENABLED(CONFIG_OPLUS_FEATURE_FRAME_BOOST)
-#include "../frame_boost/frame_group.h"
+#include "../tuning/frame_group.h"
 #endif
 #include <linux/version.h>
 #include "../../power/cpufreq_health/cpufreq_health.h"
